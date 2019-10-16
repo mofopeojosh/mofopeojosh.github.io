@@ -6,70 +6,76 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <style>
-        .card {
-            color: white;
-            padding: 2%;
-            background-color: darkslategrey;
-            border-radius: 10px;
-            margin: 7%;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        .title {
-            display: inline-block;
-            padding-bottom: 2px;
-            border-bottom: 2px solid yellow;
-        }
-
-        .projects {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .project h3 {
-            border-left: 1px solid yellow;
-            padding-left: 5px;
-            margin-bottom: 10px;
-        }
-
-        .projects .description {
-            padding-left: 10px;
-
-        }
-
-        .project p {
-            margin: 5px;
-        }
-
-        small {
-            border: 1px dotted;
-            padding: 2px 5px;
-            margin-right: 5px;
-        }
-
-        .vue-tag {
-            border-color: lightseagreen;
-        }
-
-        .laravel-tag {
-            border-color: crimson;
-        }
-
-        footer {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        footer a {
-            color: lightgray;
-            padding: 5px;
-        }
-    </style>
 </head>
+<style>
+    .card {
+        color: white;
+        padding: 2%;
+        background-color: darkslategrey;
+        border-radius: 10px;
+        margin: 7%;
+        /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .title {
+        display: inline-block;
+        padding-bottom: 2px;
+        border-bottom: 2px solid yellow;
+    }
+
+    .projects {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .project h3 {
+        border-left: 1px solid yellow;
+        padding-left: 5px;
+        margin-bottom: 7px;
+    }
+
+    .project h3 > a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .projects .description {
+        padding-left: 10px;
+
+    }
+
+    .project p {
+        margin: 5px;
+    }
+
+    small {
+        border: 1px dotted;
+        padding: 2px 5px;
+        margin-right: 5px;
+    }
+
+    .vue-tag {
+        border-color: lightseagreen;
+    }
+
+    .laravel-tag {
+        border-color: crimson;
+    }
+
+    footer {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    footer a {
+        color: lightgray;
+        padding: 5px;
+    }
+</style>
 <body>
 <section class="card">
     <header>
@@ -78,17 +84,21 @@
         <code>&lt; I write Code &gt;</code>
     </header>
     <article>
-        <h2 >Portfolio</h2>
+        <h2>Portfolio</h2>
         <ul class="projects">
             <li class="project">
-                <h3>AlanandGrant</h3>
+                <h3>
+                    <a target="_blank" href="https://mofopeojosh.github.io/alanandgrant/dist/">AlanandGrant</a>
+                </h3>
                 <div class="description">
                     <p>A Single Page Application</p>
                     <small class="vue-tag">Vue.js</small>
                 </div>
             </li>
             <li class="project">
-                <h3>Kafumukache</h3>
+                <h3>
+                    <a target="_blank" href="https://kafumukache.com">Kafumukache</a>
+                </h3>
                 <div class="description">
                     <p>A Server Side Rendered Website</p>
                     <small class="vue-tag">Vue.js</small>
@@ -96,32 +106,21 @@
                 </div>
             </li>
             <li class="project">
-                <h3>Todo App</h3>
+                <h3>
+                    <a target="_blank" href="https://mofopeojosh.github.io/todo-vue">Todo App</a>
+                </h3>
                 <div class="description">
                     <p>The famous To-Do Application</p>
                     <small class="vue-tag">Vue.js</small>
                 </div>
             </li>
-            <li class="project">
-                <h3>Crypto Compare</h3>
-                <div class="description">
-                    <p>Experimenting with APIs</p>
-                    <small class="vue-tag">Vue.js</small>
-                </div>
-            </li>
-            <li class="project">
-                <h3>Crypto Compare</h3>
-                <div class="description">
-                    <p>A Progressive Web App </p>
-                    <small class="vue-tag">Vue.js</small>
-                </div>
-            </li>
+
         </ul>
     </article>
     <footer>
-        <a href="https://linkedin.com/in/mofopeojosh">LinkedIn</a>
-        <a href="https://github.com/mofopeojosh">Github</a>
-        <a href="https://twitter.com/mofopeojosh">Twitter</a>
+        <a target="_blank" href="https://linkedin.com/in/mofopeojosh">LinkedIn</a>
+        <a target="_blank" href="https://github.com/mofopeojosh">Github</a>
+        <a target="_blank" href="https://twitter.com/mofopeojosh">Twitter</a>
     </footer>
 </section>
 </body>
