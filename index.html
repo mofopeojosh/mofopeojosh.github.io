@@ -6,15 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+
 </head>
 <style>
+    body{
+        font-family: 'Work Sans', sans-serif;
+    }
+    .card-wrapper{
+        position: fixed;
+        overflow: scroll;
+        top: 7%;
+        bottom: 7%;
+        left: 7%;
+        right: 7%;
+    }
     .card {
-        color: white;
+        color: #111011;
         padding: 2%;
-        background-color: darkslategrey;
-        border-radius: 10px;
-        margin: 7%;
-        /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+        width: 100%;
+        background-color: #d9e3e2;
     }
 
     header {
@@ -24,7 +35,7 @@
     .title {
         display: inline-block;
         padding-bottom: 2px;
-        border-bottom: 2px solid yellow;
+        border-bottom: 2px solid #184C69;
     }
 
     .projects {
@@ -32,38 +43,37 @@
         padding: 0;
     }
 
-    .project h3 {
-        border-left: 1px solid yellow;
+    .project h2 {
+        border-left: 1px solid #184C69;
         padding-left: 5px;
-        margin-bottom: 7px;
+        margin-bottom: 2px;
     }
 
-    .project h3 > a {
-        color: white;
+    .project h2 > a {
+        color: #000000;
         text-decoration: none;
+    }
+
+    .projects .tags {
+        padding-left: 5px;
+
     }
 
     .projects .description {
         padding-left: 10px;
-
     }
 
     .project p {
-        margin: 5px;
+        margin-top: 8px;
+        margin-bottom: 15px;
     }
 
-    small {
+    .tag {
         border: 1px dotted;
         padding: 2px 5px;
         margin-right: 5px;
-    }
-
-    .vue-tag {
-        border-color: lightseagreen;
-    }
-
-    .laravel-tag {
-        border-color: crimson;
+        color: #696969;
+        border-color: #FFFFFF;
     }
 
     footer {
@@ -72,64 +82,84 @@
     }
 
     footer a {
-        color: lightgray;
+        color: #696969;
         padding: 5px;
     }
 </style>
 <body>
-<section class="card">
-    <header>
-        <h1 class="title">Mofope Ojosh</h1>
-        <br>
-        <code>&lt; I write Code &gt;</code>
-    </header>
-    <article>
-        <h2>Portfolio</h2>
-        <ul class="projects">
-            <li class="project">
-                <h3>
-                    <a target="_blank" href="https://mofopeojosh.github.io/alanandgrant/dist/">AlanandGrant</a>
-                </h3>
-                <div class="description">
-                    <p>A Single Page Application</p>
-                    <small class="vue-tag">Vue.js</small>
-                </div>
-            </li>
-            <li class="project">
-                <h3>
-                    <a target="_blank" href="https://kafumukache.com">Kafumukache</a>
-                </h3>
-                <div class="description">
-                    <p>A Server Side Rendered Website</p>
-                    <small class="vue-tag">Vue.js</small>
-                    <small class="laravel-tag">Laravel</small>
-                </div>
-            </li>
-            <li class="project">
-                <h3>
-                    <a target="_blank" href="https://mofopeojosh.github.io/todo-vue">Todo App</a>
-                </h3>
-                <div class="description">
-                    <p>The famous To-Do Application</p>
-                    <small class="vue-tag">Vue.js</small>
-                </div>
-            </li>
-            <li class="project">
-                <h3>
-                    <a target="_blank" href="http://mofopeojosh.github.io/arinka">Arinka</a>
-                </h3>
-                <div class="description">
-                    <p>Simple Mockup Implementation</p>
-                </div>
-            </li>
+<div class="card-wrapper">
+    <section class="card">
+        <header>
+            <h1 class="title">Mofope Ojosh</h1>
+            <br>
+            <code>&lt; I write Code &gt;</code>
+        </header>
+        <article>
+            <h2 class="section-title">Portfolio</h2>
+            <ul class="projects">
+                <li class="project">
+                    <h2>
+                        <a target="_blank" href="https://mofopeojosh.github.io/alanandgrant/dist/">AlanandGrant</a>
+                    </h2>
 
-        </ul>
-    </article>
-    <footer>
-        <a target="_blank" href="https://linkedin.com/in/mofopeojosh">LinkedIn</a>
-        <a target="_blank" href="https://github.com/mofopeojosh">Github</a>
-        <a target="_blank" href="https://twitter.com/mofopeojosh">Twitter</a>
-    </footer>
-</section>
+                     <div class="tags">
+                        <small class="tag">Vue.js</small>
+                     </div>
+                    <div class="description">
+                        <p>A Single Page Application</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <h2>
+                        <a target="_blank" href="https://kafumukache.com">Kafumukache</a>
+                    </h2>
+                    <div class="tags">
+                        <small class="tag">Vue.js</small>
+                        <small class="tag">Laravel</small>
+                    </div>
+                    <div class="description">
+                        <p>A Server Side Rendered Website</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <h2>
+                        <a target="_blank" href="https://cranky-euler-b915c8.netlify.com/">Personal Blog</a>
+                    </h2>
+                     <div class="tags">
+                        <small class="tag">Gatsby</small>
+                        <small class="tag">Strapi</small>
+                     </div>
+                    <div class="description">
+                        <p>Built with a Static Site Generator and Headless CMS</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <h2>
+                        <a target="_blank" href="https://mofopeojosh.github.io/todo-vue">Todo App</a>
+                    </h2>
+                     <div class="tags">
+                        <small class="tag">Vue.js</small>
+                     </div>
+                    <div class="description">
+                        <p>The famous To-Do Application</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <h2>
+                        <a target="_blank" href="http://mofopeojosh.github.io/arinka">Arinka</a>
+                    </h2>
+                    <div class="description">
+                        <p>Simple Mockup Implementation</p>
+                     </div>
+                </li>
+            </ul>
+        </article>
+        <footer>
+            <a target="_blank" href="https://linkedin.com/in/mofopeojosh">LinkedIn</a>
+            <a target="_blank" href="https://github.com/mofopeojosh">Github</a>
+            <a target="_blank" href="https://twitter.com/mofopeojosh">Twitter</a>
+        </footer>
+    </section>
+</div>
 </body>
 </html>
