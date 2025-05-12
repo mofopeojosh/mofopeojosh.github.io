@@ -4,7 +4,6 @@
 
 ### Contact
 - Email: mofopeojosh@gmail.com
-- Phone: +2348116631381
 - LinkedIn: https://linkedin.com/in/mofopeojosh
 - Github: https://github.com/mofopeojosh
 
